@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Class Admission Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            width: 450px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 40px auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2C3E50;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        textarea { height: 70px; }
+
+        .gender-box input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 15px;
+            padding: 12px;
+            border: none;
+            background: #27ae60;
+            color: white;
+            font-size: 17px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover { background: #2ecc71; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Computer Class Admission Form</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Enter full name" required>
+
+        <label>Father's Name</label>
+        <input type="text" name="fname" placeholder="Enter father's name" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender</label>
+        <div class="gender-box">
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" placeholder="Enter mobile number" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="Enter email address">
+
+        <label>Select Course</label>
+        <select name="course">
+            <option value="">Select any course</option>
+            <option>DCA</option>
+            <option>ADCA</option>
+            <option>TALLY + GST</option>
+            <option>CCC</option>
+            <option>Graphic Design</option>
+            <option>Typing</option>
+            <option>Programming (C/C++/Python)</option>
+        </select>
+
+        <label>Address</label>
+        <textarea name="address" placeholder="Enter full address"></textarea>
+
+        <button class="btn" type="submit">Submit Form</button>
+    </form>
+</div>
+
+</body>
+</html>
